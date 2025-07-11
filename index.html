@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeWiki - Enciclopedia de Anime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo" id="logo">Anime<span>Wiki</span></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#animes">Animes</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar anime...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenido a AnimeWiki</h2>
+                <p>La enciclopedia definitiva sobre tus animes favoritos</p>
+                <div class="hero-buttons">
+                    <a href="#animes" class="btn">Explorar Animes</a>
+                    <a href="#" class="btn btn-secondary">Únete a la comunidad</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section id="animes" class="anime-section">
+            <h2 class="section-title">Animes Destacados</h2>
+            <div class="anime-grid">
+                <!-- Anime 1: Attack on Titan -->
+                <div class="anime-card" data-anime="aot">
+                    <div class="anime-card-header">
+                        <img src="https://via.placeholder.com/300x450/cc0000/ffffff?text=Attack+on+Titan" alt="Attack on Titan" class="anime-poster">
+                        <div class="anime-rating">
+                            <span>9.8</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="anime-card-body">
+                        <h3>Attack on Titan</h3>
+                        <div class="anime-info">
+                            <span class="anime-year">2013</span>
+                            <span class="anime-episodes">88 Episodios</span>
+                        </div>
+                        <p class="anime-synopsis">La humanidad vive en ciudades rodeadas por enormes muros que los protegen de los Titanes, seres gigantescos que devoran personas. Eren Jaeger y sus amigos se unen al ejército para combatirlos.</p>
+                        <div class="anime-tags">
+                            <span class="tag action">Acción</span>
+                            <span class="tag drama">Drama</span>
+                            <span class="tag fantasy">Fantasía</span>
+                        </div>
+                    </div>
+                    <div class="anime-card-footer">
+                        <button class="btn btn-small">Ver Detalles</button>
+                        <button class="btn btn-small btn-outline">+ Lista</button>
+                    </div>
+                </div>
+
+                <!-- Anime 2: Demon Slayer -->
+                <div class="anime-card" data-anime="demon-slayer">
+                    <div class="anime-card-header">
+                        <img src="https://via.placeholder.com/300x450/660033/ffffff?text=Demon+Slayer" alt="Demon Slayer" class="anime-poster">
+                        <div class="anime-rating">
+                            <span>9.5</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="anime-card-body">
+                        <h3>Demon Slayer</h3>
+                        <div class="anime-info">
+                            <span class="anime-year">2019</span>
+                            <span class="anime-episodes">44 Episodios</span>
+                        </div>
+                        <p class="anime-synopsis">Tanjiro Kamado se convierte en un cazador de demonios después de que su familia es asesinada y su hermana Nezuko se transforma en demonio. Juntos buscan una cura para ella.</p>
+                        <div class="anime-tags">
+                            <span class="tag action">Acción</span>
+                            <span class="tag supernatural">Sobrenatural</span>
+                            <span class="tag historical">Histórico</span>
+                        </div>
+                    </div>
+                    <div class="anime-card-footer">
+                        <button class="btn btn-small">Ver Detalles</button>
+                        <button class="btn btn-small btn-outline">+ Lista</button>
+                    </div>
+                </div>
+
+                <!-- Anime 3: My Hero Academia -->
+                <div class="anime-card" data-anime="mha">
+                    <div class="anime-card-header">
+                        <img src="https://via.placeholder.com/300x450/0066cc/ffffff?text=My+Hero+Academia" alt="My Hero Academia" class="anime-poster">
+                        <div class="anime-rating">
+                            <span>8.9</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="anime-card-body">
+                        <h3>My Hero Academia</h3>
+                        <div class="anime-info">
+                            <span class="anime-year">2016</span>
+                            <span class="anime-episodes">113 Episodios</span>
+                        </div>
+                        <p class="anime-synopsis">En un mundo donde la mayoría tiene superpoderes (quirks), Izuku Midoriya sueña con ser un héroe a pesar de no tener poderes. Todo cambia cuando el héroe número uno, All Might, le elige como sucesor.</p>
+                        <div class="anime-tags">
+                            <span class="tag action">Acción</span>
+                            <span class="tag superhero">Superhéroes</span>
+                            <span class="tag school">Escuela</span>
+                        </div>
+                    </div>
+                    <div class="anime-card-footer">
+                        <button class="btn btn-small">Ver Detalles</button>
+                        <button class="btn btn-small btn-outline">+ Lista</button>
+                    </div>
+                </div>
+
+                <!-- Anime 4: Jujutsu Kaisen -->
+                <div class="anime-card" data-anime="jujutsu">
+                    <div class="anime-card-header">
+                        <img src="https://via.placeholder.com/300x450/330066/ffffff?text=Jujutsu+Kaisen" alt="Jujutsu Kaisen" class="anime-poster">
+                        <div class="anime-rating">
+                            <span>9.3</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="anime-card-body">
+                        <h3>Jujutsu Kaisen</h3>
+                        <div class="anime-info">
+                            <span class="anime-year">2020</span>
+                            <span class="anime-episodes">24 Episodios</span>
+                        </div>
+                        <p class="anime-synopsis">Yuji Itadori se convierte en el anfitrión de Ryomen Sukuna, un poderoso hechicero maldito, después de comer un dedo maldito. Se une al Colegio Técnico de Jujutsu para localizar y consumir los demás dedos de Sukuna.</p>
+                        <div class="anime-tags">
+                            <span class="tag action">Acción</span>
+                            <span class="tag supernatural">Sobrenatural</span>
+                            <span class="tag horror">Horror</span>
+                        </div>
+                    </div>
+                    <div class="anime-card-footer">
+                        <button class="btn btn-small">Ver Detalles</button>
+                        <button class="btn btn-small btn-outline">+ Lista</button>
+                    </div>
+                </div>
+
+                <!-- Anime 5: One Piece -->
+                <div class="anime-card" data-anime="one-piece">
+                    <div class="anime-card-header">
+                        <img src="https://via.placeholder.com/300x450/ff9900/000000?text=One+Piece" alt="One Piece" class="anime-poster">
+                        <div class="anime-rating">
+                            <span>9.7</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="anime-card-body">
+                        <h3>One Piece</h3>
+                        <div class="anime-info">
+                            <span class="anime-year">1999</span>
+                            <span class="anime-episodes">1000+ Episodios</span>
+                        </div>
+                        <p class="anime-synopsis">Monkey D. Luffy y su tripulación de piratas buscan el legendario tesoro "One Piece" para convertirse en el Rey de los Piratas. Viajan por el Grand Line enfrentándose a poderosos enemigos y haciendo amigos.</p>
+                        <div class="anime-tags">
+                            <span class="tag action">Acción</span>
+                            <span class="tag adventure">Aventura</span>
+                            <span class="tag comedy">Comedia</span>
+                        </div>
+                    </div>
+                    <div class="anime-card-footer">
+                        <button class="btn btn-small">Ver Detalles</button>
+                        <button class="btn btn-small btn-outline">+ Lista</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 class="section-title">Acerca de AnimeWiki</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>AnimeWiki es una enciclopedia colaborativa dedicada a documentar todo sobre el mundo del anime. Nuestra misión es proporcionar información precisa y detallada sobre tus series favoritas.</p>
+                        <p>Fundada en 2023 por apasionados del anime, nuestra plataforma crece cada día gracias a contribuidores de todo el mundo.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Animes documentados</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10,000+</span>
+                                <span class="stat-label">Contribuciones</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1M+</span>
+                                <span class="stat-label">Visitas mensuales</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x300/333333/ffffff?text=Anime+Community" alt="Comunidad Anime">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AnimeWiki</h3>
+                <p>La mejor fuente de información sobre anime en la web.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#animes">Animes</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> contacto@animewiki.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Tokyo, Japón</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 AnimeWiki. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
